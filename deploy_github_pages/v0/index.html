@@ -1,0 +1,98 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Leon Zeng's personal portfolio." />
+    <title>Leon Zeng | Portfolio</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <a class="skip-link" href="#main-content">Skip to content</a>
+    <header class="site-header">
+      <a class="brand" href="#home" aria-label="Leon Zeng, home">Leon Zeng</a>
+      <nav aria-label="Primary navigation">
+        <a href="#about">About</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact</a>
+      </nav>
+      <button class="theme-toggle" type="button" aria-label="Switch to dark theme" aria-pressed="false"><span aria-hidden="true">◐</span><span>Appearance</span></button>
+    </header>
+
+    <main id="main-content">
+      <section class="hero" id="home" aria-labelledby="hero-heading">
+        <p class="eyebrow">Portfolio · Hong Kong</p>
+        <h1 id="hero-heading">Curious about<br /><span>intelligent systems.</span></h1>
+        <div class="hero-bottom">
+          <p>I’m Leon, a Master’s student in Agentic AI Systems at The Hong Kong Polytechnic University. I am interested in AI systems that turn ambitious ideas into useful experiences.</p>
+          <a class="primary-link" href="#projects">View selected work <span aria-hidden="true">→</span></a>
+        </div>
+        <div class="hero-orb" aria-hidden="true"></div>
+      </section>
+
+      <section class="section about" id="about" aria-labelledby="about-heading">
+        <p class="section-kicker">01 / About</p>
+        <div class="section-body">
+          <h2 id="about-heading">Learning to build systems that are both capable and considered.</h2>
+          <div class="about-grid">
+            <p>I study Agentic AI Systems at PolyU and expect to graduate in August 2027. I enjoy exploring how AI can support practical decisions, interactions, and everyday tools.</p>
+            <div>
+              <p class="detail-label">Interests</p>
+              <ul class="tag-list" aria-label="Interests"><li>Artificial intelligence</li><li>Games</li><li>Sneakers</li><li>Badminton</li><li>Basketball</li></ul>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section projects" id="projects" aria-labelledby="projects-heading">
+        <p class="section-kicker">02 / Projects</p>
+        <div class="section-body">
+          <h2 id="projects-heading">Selected work</h2>
+          <div class="project-grid">
+            <article class="project-card featured-card">
+              <div class="project-topline"><span>01</span><span>Coursework · DSAI5205</span></div>
+              <div>
+                <p class="project-type">Natural Language Processing</p>
+                <h3>TextCNN: A Simple CNN for Sentences</h3>
+                <p class="project-lede">A technical reading and presentation contribution on how a shallow convolutional network can classify sentences using pre-trained word vectors.</p>
+              </div>
+              <button class="details-toggle" type="button" aria-expanded="false" aria-controls="project-one-details">Project details <span aria-hidden="true">+</span></button>
+              <div class="project-details" id="project-one-details" hidden>
+                <p><strong>Purpose.</strong> Support a group reading assignment by explaining a core NLP method and its design choices clearly.</p>
+                <p><strong>My contribution.</strong> Prepared a technical presentation segment based on Kim (2014), covering the two-channel TextCNN architecture, 300-dimensional pre-trained word2vec vectors, convolution filters, max-over-time pooling, and the model’s strengths and limitations.</p>
+                <p><strong>Focus.</strong> Compared random, static, fine-tuned, and two-channel word-vector settings for sentence classification tasks such as sentiment and question-type classification.</p>
+              </div>
+            </article>
+
+            <article class="project-card proposed-card">
+              <div class="project-topline"><span>02</span><span>Proposed · COMP5523</span></div>
+              <div>
+                <p class="project-type">Computer Vision</p>
+                <h3>Vision-Based Intelligent Desk Organizer</h3>
+                <p class="project-lede">A proposed group project that uses an overhead camera to inventory desk items, understand their spatial arrangement, and suggest a more logical layout.</p>
+              </div>
+              <button class="details-toggle" type="button" aria-expanded="false" aria-controls="project-two-details">Project details <span aria-hidden="true">+</span></button>
+              <div class="project-details" id="project-two-details" hidden>
+                <p><strong>Purpose.</strong> Build a vision-based workspace assistant that detects common desk items and groups semantically similar objects while separating dissimilar ones.</p>
+                <p><strong>My planned contribution.</strong> I plan to help define the object-detection and spatial-grouping pipeline, then turn detected item locations into clear text or on-screen reorganisation suggestions.</p>
+                <p><strong>Planned approach.</strong> Start with a fixed overhead camera, a limited class set such as pens, notebooks, mugs, phones, and keys, and evaluate detection quality, suggestion validity, and response time. This project is still under discussion and has not yet been implemented.</p>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section contact" id="contact" aria-labelledby="contact-heading">
+        <p class="section-kicker">03 / Contact</p>
+        <div class="section-body contact-body">
+          <h2 id="contact-heading">Let’s start a conversation.</h2>
+          <p>If you would like to discuss AI, projects, games, or sport, you can reach me by email.</p>
+          <a class="email-link" href="mailto:26040315g@connect.polyu.hk">26040315g@connect.polyu.hk <span aria-hidden="true">↗</span></a>
+        </div>
+      </section>
+    </main>
+
+    <footer><p>© <span id="year"></span> Leon Zeng</p><p>COMP5583 · V0 baseline</p></footer>
+    <script src="script.js"></script>
+  </body>
+</html>

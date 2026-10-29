@@ -1,0 +1,101 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Leon Zeng's personal portfolio." />
+    <title>Leon Zeng | Portfolio V2</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <a class="skip-link" href="#main-content">Skip to content</a>
+    <header class="site-header">
+      <a class="brand" href="#home" aria-label="Leon Zeng, home">Leon Zeng <span>V2</span></a>
+      <nav aria-label="Primary navigation">
+        <a href="#about">About</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact</a>
+      </nav>
+      <button class="theme-toggle" type="button" aria-label="Switch to dark theme" aria-pressed="false"><span aria-hidden="true">◐</span><span>Appearance</span></button>
+    </header>
+
+    <main id="main-content">
+      <section class="hero" id="home" aria-labelledby="hero-heading">
+        <p class="eyebrow">Portfolio V2 · Retrieval-grounded revision · Hong Kong</p>
+        <h1 id="hero-heading">Grounded in<br /><span>project evidence.</span></h1>
+        <div class="hero-bottom">
+          <p>I’m Leon, a Master’s student in Agentic AI Systems at The Hong Kong Polytechnic University. This version uses verified course materials to add specific, traceable project context without overstating outcomes.</p>
+          <a class="primary-link" href="#projects">View selected work <span aria-hidden="true">→</span></a>
+        </div>
+        <div class="hero-orb" aria-hidden="true"></div>
+      </section>
+
+      <section class="section about" id="about" aria-labelledby="about-heading">
+        <p class="section-kicker">01 / About</p>
+        <div class="section-body">
+          <h2 id="about-heading">Learning to build systems that are both capable and considered.</h2>
+          <div class="about-grid">
+            <p>I study Agentic AI Systems at PolyU and expect to graduate in August 2027. I enjoy exploring how AI can support practical decisions, interactions, and everyday tools.</p>
+            <div>
+              <p class="detail-label">Interests</p>
+              <ul class="tag-list" aria-label="Interests"><li>Artificial intelligence</li><li>Games</li><li>Sneakers</li><li>Badminton</li><li>Basketball</li></ul>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section projects" id="projects" aria-labelledby="projects-heading">
+        <p class="section-kicker">02 / Projects</p>
+        <div class="section-body">
+          <h2 id="projects-heading">Selected work</h2>
+          <div class="project-grid">
+            <article class="project-card featured-card">
+              <div class="project-topline"><span>01</span><span>Coursework · DSAI5205</span></div>
+              <div>
+                <p class="project-type">Natural Language Processing</p>
+                <h3>TextCNN: A Simple CNN for Sentences</h3>
+                <p class="project-lede">A completed two-slide technical presentation contribution on how a shallow convolutional network can classify sentences using pre-trained word vectors.</p>
+              </div>
+              <button class="details-toggle" type="button" aria-expanded="false" aria-controls="project-one-details">Project details <span aria-hidden="true">+</span></button>
+              <div class="project-details" id="project-one-details" hidden>
+                <p><strong>Evidence-informed context.</strong> DSAI5205 requires groups to use critical reading and discussion of academic literature. My completed segment focuses on Kim (2014), “Convolutional Neural Networks for Sentence Classification.”</p>
+                <p><strong>My contribution.</strong> Prepared a two-slide technical overview of the two-channel TextCNN variant: 300-dimensional pre-trained word2vec vectors, one convolutional layer with 3-, 4- and 5-word filters, max-over-time pooling and a softmax classifier.</p>
+                <p><strong>What the material shows.</strong> The presentation compares random, static, fine-tuned and two-channel word-vector settings. It records that pre-training is valuable and fine-tuning often helps, while two channels were not consistently better; local filters have limited span and max pooling discards exact positions.</p>
+                <p class="source-note">Source basis: DSAI5205 reading guidance and the TextCNN presentation material.</p>
+              </div>
+            </article>
+
+            <article class="project-card proposed-card">
+              <div class="project-topline"><span>02</span><span>Proposed · COMP5523</span></div>
+              <div>
+                <p class="project-type">Computer Vision</p>
+                <h3>Vision-Based Intelligent Desk Organizer</h3>
+                <p class="project-lede">A proposed group project for an overhead-camera system that inventories desk items, analyses their spatial arrangement and suggests a more logical layout.</p>
+              </div>
+              <button class="details-toggle" type="button" aria-expanded="false" aria-controls="project-two-details">Project details <span aria-hidden="true">+</span></button>
+              <div class="project-details" id="project-two-details" hidden>
+                <p><strong>Evidence-informed context.</strong> COMP5523 specifies a Vision-Based Intelligent Desk Organizer and Inventory Manager. The system should monitor a workspace from an overhead view and group similar objects while separating dissimilar ones.</p>
+                <p><strong>My planned contribution.</strong> I plan to help define the object-detection and spatial-grouping pipeline, then turn detected item locations into clear text or on-screen reorganisation suggestions.</p>
+                <p><strong>Planned system scope.</strong> The initial prototype will use a fixed overhead camera and a limited class set such as pens, notebooks, mugs, phones and keys. Its design will consider object detection/recognition, inventory and state monitoring, spatial cluster analysis, grouping logic and a suggestion engine.</p>
+                <p><strong>Honest project status.</strong> This project remains under discussion and has not yet been implemented. When the team confirms the scope, evaluation should consider detection accuracy, spatial-logic reliability, suggestion validity and end-to-end latency.</p>
+                <p class="source-note">Source basis: COMP5523 group-project specification.</p>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section contact" id="contact" aria-labelledby="contact-heading">
+        <p class="section-kicker">03 / Contact</p>
+        <div class="section-body contact-body">
+          <h2 id="contact-heading">Let’s start a conversation.</h2>
+          <p>If you would like to discuss AI, projects, games, or sport, you can reach me by email.</p>
+          <a class="email-link" href="mailto:26040315g@connect.polyu.hk">26040315g@connect.polyu.hk <span aria-hidden="true">↗</span></a>
+        </div>
+      </section>
+    </main>
+
+    <footer><p>© <span id="year"></span> Leon Zeng</p><p>COMP5583 · V2 RAG revision</p></footer>
+    <script src="script.js"></script>
+  </body>
+</html>
